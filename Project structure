@@ -1,0 +1,12 @@
+sanskrit_rag/
+│
+├── data/
+│   └── Rag-docs.docx
+│
+├── vectorstore/
+├── models/
+│   └── mistral-7b-instruct.Q4_K_M.gguf
+│
+├── ingest.py
+├── rag_query.py
+├── requirements.txt
