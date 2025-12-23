@@ -41,36 +41,59 @@ This project is designed for:
 ## Execution steps
 
 Step 1: Activate Virtual Environment
+
 Make sure your virtual environment is activated.
+
 Windows
+
 venv\Scripts\activate
 
 Step 2: Verify Required Files
+
 Ensure the following files and folders exist:
+
 data/Rag-docs.docx
+
 models/mistral-7b-instruct.Q4_K_M.gguf
+
 ingest.py
+
 app.py
+
 The FAISS index folder (vectorstore/) will be created automatically.
 
 Step 3: Run Document Ingestion (One-Time)
+
 This step processes the Sanskrit dataset and builds the FAISS index.
+
 python ingest.py
+
 Expected output:
+
 ✅ Sanskrit DOCX dataset indexed successfully.
 
 Step 4: Launch the Streamlit Application
+
 Start the web interface:
+
 streamlit run app.py
+
 Terminal output:
+
 Local URL: http://localhost:8501
+
 Open the URL in your browser.
 
 Step 5: Interact with the Application
 Enter queries in:
+
 -Sanskrit (देवनागरी)
+
 -Transliteration (e.g., karma yoga)
+
 -English
+
 Click Ask to receive answers
+
 -Expand the Retrieved Context section to view source text
 
